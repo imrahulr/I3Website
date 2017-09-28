@@ -1787,6 +1787,7 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
 }
 #about span {
   color: #07617d;
+  font-weight: bold;
 }
 
 .section-title-divider {
@@ -1817,7 +1818,7 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
 }
 #about .lead {
   font-family: "librebaskerville-bold", serif;
-  font-size: 2.5rem;
+  font-size: 2.15rem;
   line-height: 1.8;
   color: #2e383f;
   margin-top: 6rem;
@@ -1931,14 +1932,21 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
  h3 {
   color: rgba(242, 242, 242, 0.5);
 }
-#services .section-intro h1 {
+#services .section-intro h3 {
   color: #FFFFFF;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.667;
+  text-transform: uppercase;
+  letter-spacing: .3rem;
+  position: relative;
 }
 #services .section-intro .lead {
   color: rgba(242, 242, 242, 0.4);
 }
 #services .services-content {
   text-align: center;
+  font-size: 18px;
   max-width: 1040px;
 }
 #services .services-list {
@@ -1961,7 +1969,7 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   color: #f9a828;
 }
 #services .services-list .h05 {
-  font-size: 1.7rem;
+  font-size: 2.2rem;
   line-height: 1.765;
   color: #FFFFFF;
   margin-bottom: 3rem;
@@ -2025,7 +2033,11 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   background: #111111;
 }
 #portfolio .section-intro h3 {
-  color: rgba(242, 242, 242, 0.5);
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.667;
+  text-transform: uppercase;
+  color: white;
 }
 #portfolio .section-intro h1 {
   color: #FFFFFF;
@@ -2447,6 +2459,8 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   padding: 4.8rem 0 4.8rem;
 }
 #clients .client-lists .owl-item {
+  width: 20px;
+  height: 160px;
   opacity: .6;
   -moz-transition: all 0.6s ease-in-out;
   -o-transition: all 0.6s ease-in-out;
@@ -2512,9 +2526,131 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   background-color: #000000;
 }
 
+/* ===================================================================
+ *  16. team - (_layout.scss)
+ *
+ * ------------------------------------------------------------------- */
+#team {
+  position: relative;
+  padding: 4.2rem 0 12rem;
+  background-color: #FFFFFF;
+  min-height: 696px;
+  text-align: center;
+}
+
+.section-title-divider {
+  width: 60px;
+  height: 3px;
+  background: orange;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+#team h3 {
+  font-family: "montserrat-bold", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.667;
+  color: #07617d;
+  text-transform: uppercase;
+  letter-spacing: .3rem;
+  position: relative;
+}
+#team h3::before {
+  display: block;
+  content: "";
+  width: 3px;
+  height: 8rem;
+  background-color: rgba(149, 149, 149, 0.7);
+  margin: 0 auto 2.4rem;
+}
+#team .lead {
+  font-family: "librebaskerville-bold", serif;
+  font-size: 2.15rem;
+  line-height: 1.8;
+  color: #2e383f;
+  margin-top: 6rem;
+}
+
+#team .member {
+  text-align: center;
+  margin-bottom: 20px;
+}
+#team .member .pic {
+  margin-bottom: 15px;
+  overflow: hidden;
+  height: 260px;
+}
+#team .member .pic .img {
+  max-width: 100%;
+}
+
+#team .member h4 {
+  color: #07617d;
+  font-family: "librebaskerville-bold", serif;
+  font-weight: 800;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+#team .member span {
+  display: block;
+  color: black;
+  font-family: "librebaskerville-bold", serif;
+  font-size: 18px;
+}
+#team .member .social {
+    margin-top: 15px;
+}
+#team .member .social a {
+  color: lighten($text-color, 30%);
+  &:hover {
+    color: $accent-color;
+  }
+}
+#team .member .social i {
+  font-size: 18px;
+  margin: 0 2px;
+}
+
+
+/* ------------------------------------------------------------------- 
+ * responsive:
+ * services
+ * ------------------------------------------------------------------- */
+@media only screen and (max-width: 1024px) {
+  #team .member .pic {
+    padding: 0 40px;
+  }
+}
+@media only screen and (max-width: 900px) {
+  #services .member .pic {
+    padding: 0 30px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  #team {
+    padding: 12rem 0 12rem;
+  }
+  #team .member {
+    max-width: 550px;
+  }
+  #team .member .pic {
+    padding: 0 15px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  #team .member .pic {
+    padding: 0 10px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  #team .member .pic {
+    padding: 0;
+  }
+}
+
 
 /* ===================================================================
- *  16. contact - (_layout.scss)
+ *  17. contact - (_layout.scss)
  *
  * ------------------------------------------------------------------- */
 #contact {
@@ -2537,11 +2673,15 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   opacity: .75;
   background-color: #000000;
 }
-#contact .section-intro h1 {
-  color: white;
-}
 #contact .section-intro h3 {
-  color: rgba(242, 242, 242, 0.5);
+  font-family: "montserrat-bold", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.667;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  letter-spacing: .3rem;
+  margin-bottom: 1.2rem;
 }
 #contact .section-intro p.lead {
   color: rgba(242, 242, 242, 0.4);
