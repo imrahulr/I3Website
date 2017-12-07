@@ -10,7 +10,7 @@
 	var cfg = {		
 		defAnimation   : "fadeInUp",    // default css animation		
 		scrollDuration : 800,           // smoothscroll duration
-		mailChimpURL   : 'http://facebook.us8.list-manage.com/subscribe/post?u=cdb7b577e41181934ed6a6a44&amp;id=e65110b38d'
+		mailChimpURL   : "http://twitter.us16.list-manage.com/subscribe/post?u=dd9374459bf427ae793119a25&amp;id=18943dff4f"//"http://facebook.us8.list-manage.com/subscribe/post?u=cdb7b577e41181934ed6a6a44&amp;id=e65110b38d"
 	},	
 
 	$WIN = $(window);
@@ -30,13 +30,13 @@
 
 			// force page scroll position to top at page refresh
 			$('html, body').animate({ scrollTop: 0 }, 'normal');
-
-	      // will first fade out the loading animation 
+			
+	        // will first fade out the loading animation 
 	    	$("#loader").fadeOut("slow", function(){
 
 	        // will fade out the whole DIV that covers the website.
 	        $("#preloader").delay(300).fadeOut("slow");
-
+	
 	      }); 
 	  	});
 	}; 
@@ -350,7 +350,7 @@
 
 		$('#mc-form').ajaxChimp({
 			language: 'es',
-		   url: cfg.mailChimpURL
+		    url: cfg.mailChimpURL
 		});
 
 		// Mailchimp translation
@@ -417,7 +417,7 @@
 		ssAnimations();
 		ssIntroAnimation();		
 		ssContactForm();
-		ssAjaxChimp();
+		//ssAjaxChimp();
 		ssBackToTop();
 
 	})();

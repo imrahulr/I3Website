@@ -1,11 +1,12 @@
 ﻿<?php
 
 // Replace this with your own email address
-$siteOwnersEmail = 'user@website.com';
+$siteOwnersEmail = 'abhishekpandey@ieee.org';
 
 
 if($_POST) {
 
+   $err = false;
    $name = trim(stripslashes($_POST['contactName']));
    $email = trim(stripslashes($_POST['contactEmail']));
    $subject = trim(stripslashes($_POST['contactSubject']));
@@ -13,23 +14,26 @@ if($_POST) {
 
    // Check Name
 	if (strlen($name) < 2) {
+		$err = true;
 		$error['name'] = "Please enter your name.";
 	}
 	// Check Email
 	if (!preg_match('/^[a-z0-9&\'\.\-_\+]+@[a-z0-9\-]+\.([a-z0-9\-]+\.)*+[a-z]{2}/is', $email)) {
+		$err = true;
 		$error['email'] = "Please enter a valid email address.";
 	}
 	// Check Message
-	if (strlen($contact_message) < 15) {
-		$error['message'] = "Please enter your message. It should have at least 15 characters.";
+	if (strlen($contact_message) < 10) {
+		$err = true;
+		$error['message'] = "Please enter your message. It should have at least 10 characters.";
 	}
    // Subject
 	if ($subject == '') { $subject = "Contact Form Submission"; }
 
 
    // Set Message
-   $message .= "Email from: " . $name . "<br />";
-	$message .= "Email address: " . $email . "<br />";
+   $message = "Email from: " . $name . "<br />";
+   $message .= "Email address: " . $email . "<br />";
    $message .= "Message: <br />";
    $message .= $contact_message;
    $message .= "<br /> ----- <br /> This email was sent from your site's contact form. <br />";
@@ -44,7 +48,7 @@ if($_POST) {
 	$headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
 
 
-   if (!$error) {
+   if (!$err) {
 
       ini_set("sendmail_from", $siteOwnersEmail); // for windows server
       $mail = mail($siteOwnersEmail, $subject, $message, $headers);

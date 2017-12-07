@@ -1,0 +1,88 @@
+/* ===================================================================
+ *  IEEE VJTI mb - (_layout.scss)
+ *
+ * ------------------------------------------------------------------- */
+#mb {
+  position: relative;
+  padding: 4.2rem 0 12rem;
+  background-color: #E8E8EE;
+  min-height: 696px;
+  text-align: center;
+}
+#md .container {
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
+}
+.section-title-divider {
+  width: 60px;
+  height: 3px;
+  background: orange;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+#mb h3 {
+  padding-top: 20px;
+  font-family: "montserrat-bold", sans-serif;
+  font-size: 40px;
+  color: #07617d;
+  font-weight: 700;
+  line-height: 1.667;
+  text-transform: uppercase;
+  letter-spacing: .3rem;
+  position: relative;
+}
+#mb .member img {
+  align-self: left;
+  padding-right: 15px;
+}
+#mb .member .des {
+  padding: 20px;
+  padding-bottom: 10px;
+  font-family: "montserrat-regular", serif;
+  font-size: 16px;
+  padding-left: 10px;
+  display: block;
+  line-height: 2.5;
+  color: #2e383f;
+}
+#mb .member .des:hover {
+  color: #1919ff;
+}
+#mb .member .deslink {
+  text-decoration: none;
+}
+#mb .member {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+/* ------------------------------------------------------------------- 
+ * responsive:
+ * mb
+ * ------------------------------------------------------------------- */
+@media only screen and (max-width: 1024px) {
+}
+@media only screen and (max-width: 900px) {
+}
+@media only screen and (max-width: 768px) {
+}
+@media only screen and (max-width: 600px) {
+}
+@media only screen and (max-width: 500px) {
+  #mb #section-title {
+    font-size: 30px;
+  }
+  #mb .member .des {
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  #mb #section-title {
+    font-size: 23px;
+  }
+  #mb .member .des {
+    font-weight: 700;
+    font-size: 13px;
+  }
+}

@@ -1,6 +1,6 @@
 /* =================================================================== 
  *
- *  Infinity v1.0 Vendor/Third Party CSS 
+ *  IEEE VJTI v1.0 Vendor/Third Party CSS 
  *  01-02-2017
  *  ------------------------------------------------------------------
  *
@@ -15,10 +15,7 @@
 /**
  * 01. 
  * Animate.css - http://daneden.me/animate
- * Licensed under the MIT license - http://opensource.org/licenses/MIT
- *
- * Copyright (c) 2015 Daniel Eden
- * ===================================================================
+  ===================================================================
  */
 .animated {
   -webkit-animation-duration: 1s;
@@ -3789,9 +3786,6 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 /**
  * 03.
  * Owl Carousel v2.2.0
- * Copyright 2013-2016 David Deutsch
- * Licensed under MIT (https://github.com/OwlCarousel2/OwlCarousel2/blob/master/LICENSE)
- */
 /*
  *  Owl Carousel - Core
  */
@@ -4013,14 +4007,6 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 /**
  * 04.
  * jQuery FlexSlider v2.5.0
- * http://www.woothemes.com/flexslider/
- *
- * Copyright 2012 WooThemes
- * Free to use under the GPLv2 and later license.
- * http://www.gnu.org/licenses/gpl-2.0.html
- *
- * Contributing author: Tyler Smith (@mbmufffin)
- * 
  * ===================================================================
  */
 /* reset */

@@ -1,0 +1,58 @@
+/* ===================================================================
+ *  IEEE VJTI library - (_layout.scss)
+ *
+ * ------------------------------------------------------------------- */
+.library .add{
+	text-align: center;
+	font-size: 25px;
+	height: 50px;
+	background-color: #d50000;
+	color: #ffffff;
+	display: inline-block;
+	border-radius: 5px;
+	text-transform: none;
+}
+
+.library .search{
+	text-align: center;
+	font-size: 25px;
+	height: 50px;
+	background-color: #388E3C;
+	color: #ffffff;
+	display: inline-block;
+	border-radius: 5px;
+	text-transform: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .library .add {
+    font-size: 22px;
+  }
+  .library .search {
+    font-size: 22px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .library .add {
+    font-size: 20px;
+  }
+  .library .search {
+    font-size: 20px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .library .add {
+    font-size: 18px;
+  }
+  .library .search {
+    font-size: 18px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .library .add {
+    font-size: 16px;
+  }
+  .library .search {
+    font-size: 16px;
+  }
+}

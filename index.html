@@ -20,12 +20,15 @@
    <link rel="stylesheet" href="css/bootstrap.min.css">
    <link rel="stylesheet" href="css/base.css">
    <link rel="stylesheet" href="css/vendor.css">  
-   <link rel="stylesheet" href="css/main.css">  
+   <link rel="stylesheet" href="css/main_v1.css">  
+   <link rel="stylesheet" type="text/css" href="css/team.css">
 
    <!-- script
    ================================================== -->
 	<script src="js/modernizr.js"></script>
 	<script src="js/pace.min.js"></script>
+	<script type="text/javascript" src="js/jquery-2.1.3.min.js"></script> 
+	<script src="js/recliner.min.js"></script>
 
    <!-- favicons
 	================================================== -->
@@ -41,7 +44,7 @@
    <header> 
 
    	<div class="header-logo">
-	      <a href="index.html">IEEE VJTI</a>
+	    <img class="img-rounded" src="images/logo_v3.png">
 	   </div> 
 
 		<a id="header-menu-trigger" href="#0">
@@ -56,37 +59,23 @@
 	   	<h3>IEEE VJTI</h3>  
 
 			<ul class="nav-list">
-				<li class="current"><a class="smoothscroll" href="/" title="">Home</a></li>
-				<li><a class="smoothscroll" href="#about" title="">About</a></li>
-				<li><a class="smoothscroll" href="" title="">Blogs</a></li>
-				<li><a class="smoothscroll" href="" title="">Events</a></li>
-				<li><a class="smoothscroll" href="" title="">Library</a></li>
-				<li><a class="smoothscroll" href="" title="">R & D</a></li>
-				<li><a class="smoothscroll" href="#contact" title="">Contact Us</a></li>						
+				<li class="current"><a class="smoothscroll" href="/" title="Home">Home</a></li>
+				<li><a href="membership.html" title="Membership">Membership Benefits</a></li>
+				<li><a href="blog.php" title="Blogs">Blogs</a></li>
+				<li><a href="event.html" title="Events">Events</a></li>
+				<li><a href="library.html" title="Library">Library</a></li>
+				<li><a href="project.html" title="R & D">R & D</a></li>
+				<li><a href="team.html" title="Our Team">Our Team</a></li>
+				<li><a class="smoothscroll" href="#contact" title="Contact">Contact Us</a></li>						
 			</ul>	
-
-			<!--p class="sponsor-text">
-				Looking for an awesome and reliable projects? Try <a href="http://www.dreamhost.com/r.cgi?287326|STYLESHOUT">DreamHost</a>.
-				Get <span>$50 off</span> when you sign up with the promocode <span>styleshout</span>. 
-				< Simply type	the promocode in the box labeled “Promo Code” when placing your order.>
-			</p-->			
 
 			<ul class="header-social-list">
 	         <li>
-	         	<a href="#"><i class="fa fa-facebook-square"></i></a>
+	         	<a href="https://www.facebook.com/IEEEVJTI/"><i class="fa fa-facebook-square"></i></a>
 	         </li>
 	         <li>
-	         	<a href="#"><i class="fa fa-twitter"></i></a>
-	         </li>
-	         <li>
-	         	<a href="#"><i class="fa fa-instagram"></i></a>
-	         </li>
-            <li>
-            	<a href="#"><i class="fa fa-behance"></i></a>
-            </li>
-	         <li>
-	         	<a href="#"><i class="fa fa-dribbble"></i></a>
-	         </li>	         
+            	<a href="https://www.youtube.com/channel/UCXkEZSsh_RWiBfrJIPY27vg/featured?view_as=subscriber"><i class="fa fa-youtube"></i></a>
+            </li>	         
 	      </ul>		
 
 		</nav>  <!-- end #menu-nav-wrap -->
@@ -108,11 +97,11 @@
 			  				<h1 class="animate-intro">
 							IEEE VJTI
 				  			</h1>
-							<h3 class="animate-intro">We Are Best.</h3>
+							<h3 class="animate-intro">Come Lets Invent & Discover Together.</h3>
 
 				  			<div class="more animate-intro">
-				  				<a class="smoothscroll button stroke" href="#about">
-				  					Learn More
+				  				<a class="button stroke" href="https://goo.gl/forms/K0WUKuQal9eUFeSS2">
+				  					Subscribe
 				  				</a>
 				  			</div>							
 
@@ -123,19 +112,11 @@
 
 		<ul class="home-social-list">
 	      <li class="animate-intro">
-	        	<a href="#"><i class="fa fa-facebook-square"></i></a>
+	        	<a href="https://www.facebook.com/IEEEVJTI/"><i class="fa fa-facebook-square"></i></a>
 	      </li>
+	      
 	      <li class="animate-intro">
-	        	<a href="#"><i class="fa fa-twitter"></i></a>
-	      </li>
-	      <li class="animate-intro">
-	        	<a href="#"><i class="fa fa-instagram"></i></a>
-	      </li>
-         <li class="animate-intro">
-           	<a href="#"><i class="fa fa-behance"></i></a>
-         </li>
-	      <li class="animate-intro">
-	        	<a href="#"><i class="fa fa-dribbble"></i></a>
+	        	<a href="https://www.youtube.com/channel/UCXkEZSsh_RWiBfrJIPY27vg/featured?view_as=subscriber"><i class="fa fa-youtube"></i></a>
 	      </li>	      
 	   </ul> <!-- end home-social-list -->	
 
@@ -164,7 +145,7 @@
 		   			<p class="lead animate-this"><span>IEEE VJTI</span> is a committee of enthusiastic electrical and electronics engineering students under the world's largest technical professional organization for advancement of technology,  Institute of Electrical and Electronics Engineers (IEEE). Founded in 1884 as the AIEE, the IEEE was formed in 1963 when AIEE merged with IRE. IEEE is an organization composed of engineers, scientists, and students. The IEEE is best known for developing standards for the computer and electronics industry.<br>
 		   			The Veermata Jijabai Technological Institute (VJTI) was given its present title on January 26, 1997. Founded in 1887, it was then known as Victoria Jubilee Technical Institute.
 					The institute is reputed for excellent training in courses in engineering and technology at diploma and, degree and post graduate levels over three thousand students. Over twenty seven courses are offered at the undergraduate, postgraduate, diploma, postgraduate diploma and post diploma levels.
-					IEEE VJTI is the confluence of two time tested organisations focused at giving back to the society with the help of technological research	
+					IEEE VJTI is the confluence of two time tested organisations focused at giving back to the society with the help of technological research.	
 					</p>	
 				</div>   
 
@@ -276,7 +257,7 @@
    		<div class="col-twelve">
    			<div id="folio-wrap" class="bricks-wrapper">					
 
-   				<div class="brick folio-item">
+   				<!-- <div class="brick folio-item">
 	               <div class="item-wrap animate-this" data-src="images/portfolio/gallery/g-iot.jpg" data-sub-html="#01" > 	
 	                  <a href="#" class="overlay">
 	                  	<img src="images/portfolio/iot.jpg" alt="IoT-IEEE VJTI">	                     
@@ -290,15 +271,15 @@
 	                  <a href="https://www.behance.net/" class='details-link' title="details">
 	                  	<i class="icon-link"></i>
 	                  </a>
-	               </div> <!-- end item-wrap -->
-						
+	               </div> 
+
 						<div id="01" class='hide'>
 							<h4>IEEE VJTI</h4>
 							<p>A guest lecture by Jagdsih Bisawa on 29/09/17 at 5p.m., VJTI Auditorium</p>
 						</div>
-	        		</div> <!-- end folio-item -->
+	        		</div> 
 
-	        		<div class="brick folio-item">
+	        	<div class="brick folio-item">
 	               <div class="item-wrap animate-this" data-src="images/portfolio/gallery/g-yellowwall.jpg" data-sub-html="#02"> 	
 	                  <a href="#" class="overlay">
 	                  	<img src="images/portfolio/yellowwall.jpg" alt="Shutterbug">	                     
@@ -312,220 +293,81 @@
 	                  <a href="https://www.behance.net/" class='details-link' title="details">
 	                  	<i class="icon-link"></i>
 	                  </a>
-	               </div> <!-- end item-wrap -->
-
+	               </div> 
 	               <div id="02" class='hide'>
 							<h4>Yellow Wall</h4>
 							<p>Lorem ipsum Dolor deserunt labore sint officia. Magna et aute enim proident tempor sunt quis nulla voluptate fugiat velit. <a href="https://www.behance.net/">Details</a></p>
 						</div>	               
-	        		</div> <!-- end folio-item -->
+	        		</div> -->
 
-	        		<div class="brick folio-item">
-	               <div class="item-wrap animate-this" data-src="images/portfolio/gallery/g-architecture.jpg" data-sub-html="#03" >   	
+	        	<div class="brick folio-item">
+	               <div class="item-wrap animate-this" data-src="images/portfolio/gallery/g-logo_new.png" data-sub-html="#03" >   	
 	                  <a href="#" class="overlay">
-	                  	<img src="images/portfolio/architecture.jpg" alt="Explore">	                     
+	                  	<img src="images/portfolio/logo_new_1.png" alt="Explore">	                     
 	                     <div class="item-text">	                     		     					    
-		     					   <span class="folio-types">
-		     					      Web Design
-		     					   </span>
-		     					   <h3 class="folio-title">Architecture</h3>
-		     					</div>                                        
-	                  </a>
-	                  <a href="https://www.behance.net/" class='details-link' title="details">
-	                  	<i class="icon-link"></i>
-	                  </a>
-	               </div> <!-- end item-wrap -->	
-
-	               <div id="03" class='hide'>
-							<h4>Architecture</h4>
-							<p>Lorem ipsum Dolor deserunt labore sint officia. Magna et aute enim proident tempor sunt quis nulla voluptate fugiat velit. <a href="https://www.behance.net/">Details</a></p>
-						</div>               
-	        		</div> <!-- end folio-item -->
-
-					<div class="brick folio-item">
-	               <div class="item-wrap animate-this"  data-src="images/portfolio/gallery/g-logo.jpg"  data-sub-html="#04" >
-	                  <a href="#" class="overlay">
-	                  	<img src="images/portfolio/logo.jpg" alt="Minimalismo">	                     
-	                     <div class="item-text">	     					    
 		     					   <span class="folio-types">
 		     					      IEEE VJTI
 		     					   </span>
 		     					   <h3 class="folio-title">Logo</h3>
-		     					</div>                                      
-	               </div> <!-- end item-wrap -->
+		     					</div>                                        
+	                  </a>
+	               </div> <!-- end item-wrap -->	
 
-	               <div id="04" class='hide'>
+	               <div id="01" class='hide'>
 							<h4>IEEE VJTI</h4>
 							<p>Official Logo for IEEE VJTI</p>
-						</div>  	               
+						</div>               
 	        		</div> <!-- end folio-item -->
 
+				<div class="brick folio-item">
+					<div class="video-container">
+	                <iframe class="lazy video" width="100%" height="315px" src="images/lightgallery/loading.gif" data-src="https://www.youtube.com/embed/K6ursK8vSIs" allowfullscreen>
+					</iframe>
+					</div>
+					<div id="02" class='hide'>
+							<h4>IEEE VJTI</h4>
+							<p>IEEE Overview</p>
+						</div>  	               
+	        	</div> <!-- end folio-item -->
+
+	        	<div class="brick folio-item">
+	        		<div class="video-container">
+	                <iframe class="lazy video" width="100%" height="350px" src="images/loader.gif"
+	                data-src="https://www.youtube.com/embed/w2Xf321Uasg" allowfullscreen>
+					</iframe>
+					</div>
+					<div id="03" class='hide'>
+							<h4>IEEE VJTI</h4>
+							<p>IEEE One Voice</p>
+						</div>  	               
+	        	</div> <!-- end folio-item -->
+
+	        	<div class="brick folio-item">
+	                <div class="video-container">
+	                <iframe class="lazy video" width="100%" height="315px" src="images/loader.gif" data-src="https://www.youtube.com/embed/bd8bTOQbnxs" allowfullscreen>
+					</iframe>
+					</div>
+					<div id="04" class='hide'>
+							<h4>IEEE VJTI</h4>
+							<p>IEEE "One Voice"</p>
+						</div>  	               
+	        	</div> <!-- end folio-item -->
+
+			<script type="text/javascript">
+			$(".lazy").recliner({
+		        attrib: "data-src",
+		        throttle: 300,     
+		        threshold: 100,    
+		        live: true         
+		    });
+		    </script>
 				
    			</div> <!-- end folio-wrap -->
    		</div> <!-- end twelve -->
+
    	</div> <!-- end portfolio-content -->   	
 
    </section>  <!-- end portfolio -->
-
-
-   <!-- Testimonials Section
-   ================================================== -->
-   <section id="testimonials">
-
-   	<div class="row">
-   		<div class="col-twelve">
-   			<h2 class="animate-this">What They Say About Us.</h2>
-   		</div>   		
-   	</div>   	
-
-      <div class="row flex-container">
-    
-         <div id="testimonial-slider" class="flex-slider animate-this">
-
-            <ul class="slides">
-
-               <li>
-                  <p>
-                  Your work is going to fill a large part of your life, and the only way to be truly satisfied is
-                  to do what you believe is great work. And the only way to do great work is to love what you do.
-                  If you haven't found it yet, keep looking. Don't settle. As with all matters of the heart, you'll know when you find it.
-                  </p> 
-
-                  <div class="testimonial-author">
-                    	<img src="images/avatars/user-02.jpg" alt="Author image">
-                    	<div class="author-info">
-                    		Steve Jobs
-                    		<span class="position">CEO, Apple.</span>
-                    	</div>
-                  </div>                 
-             	</li> <!-- end slide -->
-
-               <li>
-                  <p>
-                  This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.
-                  Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem
-                  nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.    
-                  </p>
-
-               	<div class="testimonial-author">
-                    	<img src="images/avatars/user-03.jpg" alt="Author image">
-                    	<div class="author-info">
-                    		John Doe
-                    		<span>CEO, ABC Corp.</span>
-                    	</div>
-                  </div>                                         
-               </li> <!-- end slide -->
-
-            </ul> <!-- end slides -->
-
-         </div> <!-- end testimonial-slider -->         
-        
-      </div> <!-- end flex-container -->
-
-   </section> <!-- end testimonials -->
-
-
-	<!-- stats
-   ================================================== -->
-   <section id="clients">
-
-		<div class="row animate-this">
-			<div class="col-twelve">
-
-				<div class="client-lists owl-carousel">
-  					<div><img src="images/clients/firefox.png" alt=""></div>
-  					<div><img src="images/clients/bower.png" alt=""></div>
-  					<div><img src="images/clients/codepen.png" alt=""></div>
-  					<div><img src="images/clients/envato.png" alt=""></div>
-  					<div><img src="images/clients/firefox.png" alt=""></div>
-  					<div><img src="images/clients/grunt.png" alt=""></div>
-  					<div><img src="images/clients/evernote.png" alt=""></div>
-  					<div><img src="images/clients/github.png" alt=""></div>
-  					<div><img src="images/clients/joomla.png" alt=""></div>
-  					<div><img src="images/clients/jQuery.png" alt=""></div>
-  					<div><img src="images/clients/wordpress.png" alt=""></div>
-				</div>
-				
-			</div> <!-- end col-twelve -->
-		</div> <!-- end row -->
-
-   </section> <!-- end clients -->
-
-   
-    <! -- our team
-    ================================================ -->
-
-    <section id="team">
-    <div class="container">
-      <div class="row narrow section-intro animate-this">
-        <div class="col-twelve">
-          <h3 id="section-title">Our Team</h3>
-          <div class="section-title-divider"></div>
-          <p class="lead animate-this"></p>
-        </div>
-      </div>
-      
-      <div class="row">
-        <div class="col-md-3 animate-this">
-          <div class="member">
-            <div class="pic"><img src="images/team-1.jpg" alt=""></div>
-            <h4>Walter White</h4>
-            <span>Chief Executive Officer</span>
-            <div class="social">
-              <a href=""><i class="fa fa-twitter"></i></a>
-              <a href=""><i class="fa fa-facebook"></i></a>
-              <a href=""><i class="fa fa-google-plus"></i></a>
-              <a href=""><i class="fa fa-linkedin"></i></a>
-            </div>
-          </div>
-        </div>
-        
-        <div class="col-md-3 animate-this">
-          <div class="member">
-            <div class="pic"><img src="images/team-2.jpg" alt=""></div>
-            <h4>Sarah Jhinson</h4>
-            <span>Product Manager</span>
-            <div class="social">
-              <a href=""><i class="fa fa-twitter"></i></a>
-              <a href=""><i class="fa fa-facebook"></i></a>
-              <a href=""><i class="fa fa-google-plus"></i></a>
-              <a href=""><i class="fa fa-linkedin"></i></a>
-            </div>
-          </div>
-        </div>
-        
-        <div class="col-md-3 animate-this">
-          <div class="member">
-            <div class="pic"><img src="images/team-3.jpg" alt=""></div>
-            <h4>William Anderson</h4>
-            <span>CTO</span>
-            <div class="social">
-              <a href=""><i class="fa fa-twitter"></i></a>
-              <a href=""><i class="fa fa-facebook"></i></a>
-              <a href=""><i class="fa fa-google-plus"></i></a>
-              <a href=""><i class="fa fa-linkedin"></i></a>
-            </div>
-          </div>
-        </div>
-        
-        <div class="col-md-3 animate-this">
-          <div class="member">
-            <div class="pic"><img src="images/team-4.jpg" alt=""></div>
-            <h4>Amanda Jepson</h4>
-            <span>Accountant</span>
-            <div class="social">
-              <a href=""><i class="fa fa-twitter"></i></a>
-              <a href=""><i class="fa fa-facebook"></i></a>
-              <a href=""><i class="fa fa-google-plus"></i></a>
-              <a href=""><i class="fa fa-linkedin"></i></a>
-            </div>
-          </div>
-        </div>
-        
-      </div>  
-    </div>
-  </section>
-
 
 	<!-- contact
    ================================================== -->
@@ -612,18 +454,18 @@
 	   		<div class="cinfo">
 	   			<h6>Email Us At</h6>
 	   			<p>
-	   				someone@ieee.org
-				   	info@ieee.org		     
+	   				abhishekpandey@ieee.org<br>
+				   	rsrade@ieee.org<br>		     
 				</p>
 	   		</div> <!-- end cinfo -->
 
-	   		<div class="cinfo">
+	   		<!-- <div class="cinfo">
 	   			<h6>Call Us At</h6>
 	   			<p>
 	   				Phone: (+91) 555 1212<br>
 				   	Mobile: (+91) 555 0100<br>
 				</p>
-	   		</div>
+	   		</div> -->
 
          </div> <!-- end cinfo --> 
 
@@ -638,8 +480,7 @@
      	<div class="footer-main">
 
    		<div class="row">  
-
-	      	<div class="col-five tab-full footer-about">       
+		<div class="col-five tab-full footer-about">       
 
 	            <h4 class="h05">IEEE VJTI</h4>
 
@@ -652,11 +493,11 @@
 	      		<h4 class="h05">Follow Us.</h4>
 
 	      		<ul class="list-links">
-	      			<li><a href="#">Facebook</a></li>
-						<li><a href="#">Twitter</a></li>
+	      		      			<li><a href="https://www.facebook.com/IEEEVJTI/">Facebook</a></li>
+						<!-- <li><a href="#">Twitter</a></li>
 						<li><a href="#">Instagram</a></li>
-						<li><a href="#">Behance</a></li>
-						<li><a href="#">Dribble</a></li>						
+						<li><a href="#">Behance</a></li> -->
+						<li><a href="https://www.youtube.com/channel/UCXkEZSsh_RWiBfrJIPY27vg/featured?view_as=subscriber">YouTube</a></li>						
 					</ul>
 
 	      	</div> <!-- end footer-social -->  
@@ -671,14 +512,15 @@
 	      	
 	      			<form id="mc-form" class="group" novalidate="true">
 
-							<input type="email" value="" name="dEmail" class="email" id="mc-email" placeholder="type email" required=""> 
+							<!-- <input type="email" value="" name="dEmail" class="email" id="mc-email" placeholder="type email" required="">  -->
+							<a href="https://goo.gl/forms/K0WUKuQal9eUFeSS2" class="button email">SUBSCRIBE&nbsp;<!-- <i class="icon-mail"></i> --></a>
 	   		
 			   			<!-- <input type="submit" name="subscribe" > -->
-			   			<button><i class="icon-mail"></i></button>
-		   	
+			   			   
 		   				<label for="mc-email" class="subscribe-message"></label>
 			
 						</form>
+
 
 	      		</div>
 	      	           	
@@ -694,9 +536,10 @@
 
       		<div class="col-twelve">
 	      		<div class="copyright">
-		         	<span>© Copyright IEEE VJTI 2017.</span> 	         	
-		         </div>		               
-	      	</div>
+		         	<span>© Copyright IEEE VJTI 2017.</span><br>
+		         </div>	
+		         <span>Designed by rsrade</span>	 
+		     </div>
 
       	</div>   	
 

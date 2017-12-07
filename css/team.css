@@ -1,0 +1,383 @@
+/* ===================================================================
+ *  IEEE VJTI team - (_layout.scss)
+ *
+ * ------------------------------------------------------------------- */
+#team {
+  position: relative;
+  padding: 4.2rem 0 12rem;
+  /*background-color: #d3d3d3;
+*/min-height: 696px;
+  text-align: center;
+}
+.exec {
+  background-color: #ffffff;
+}
+.creative {
+  background-color: #ef5350;
+}
+.rnd {
+  background-color: #4CAF50;
+}
+.mentor {
+  background-color: #ffffff;
+}
+.management {
+  background-color: #FFEB3B;
+}
+.section-title-divider {
+  width: 60px;
+  height: 3px;
+  background: orange;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+#team h3 {
+  padding-top: 20px;
+  font-family: "montserrat-bold", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.667;
+  text-transform: uppercase;
+  letter-spacing: .3rem;
+  position: relative;
+}
+.exec h3 {
+  color: #07617d;
+}
+.creative h3 {
+  color: #ffffff;
+}
+.rnd h3 {
+  color: #ffffff;
+}
+.mentor h3 {
+  color: #07617d;
+}
+.management h3 {
+  color: #07617d;
+}
+#team .lead {
+  font-family: "librebaskerville-bold", serif;
+  font-size: 2.15rem;
+  line-height: 1.8;
+  color: #2e383f;
+  margin-top: 6rem;
+}
+
+#team .member {
+  text-align: center;
+  margin-bottom: 20px;
+}
+#team .member .pic {
+  margin-bottom: 15px;
+  overflow: hidden;
+  margin: 0 auto;
+  height: 260px;
+}
+#team .member .pic img {
+  max-width: 100%;
+}
+.exec .member .pic img {
+  height: 100%;
+  width: 100%;
+}
+.creative .member .pic img {
+  height: 100%;
+  width: 80%;
+}
+.rnd .member .pic img {
+  height: 100%;
+  width: 80%;
+}
+.mentor .member .pic img {
+  height: 100%;
+  width: 80%;
+}
+.management .member .r1 img {
+  height: 100%;
+  width: 80%;
+}
+.management .member .r2 img {
+  padding-top: 20px;
+  height: 100%;
+  width: 50%;
+}
+#team .member h4 {
+  font-family: "librebaskerville-bold", serif;
+  font-weight: 800;
+  padding-top: 15px;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.exec .member h4 {
+  color: #07617d;
+}
+.creative .member h4 {
+  color: #ffffff;
+}
+.rnd .member h4 {
+  color: #ffffff;
+}
+.mentor .member h4 {
+  color: #07617d;
+}
+.management .member h4 {
+  color: #07617d;
+}
+#team .member span {
+  display: block;
+  color: black;
+  font-family: "librebaskerville-bold", serif;
+  font-size: 18px;
+}
+#team .member .social {
+  margin-top: 15px;
+}
+#team .member .social a {
+  color: lighten($text-color, 30%);
+  &:hover {
+    color: $accent-color;
+  }
+}
+#team .member .social i {
+  font-size: 18px;
+  margin: 0 2px;
+}
+
+
+/* ------------------------------------------------------------------- 
+ * responsive:
+ * services
+ * ------------------------------------------------------------------- */
+ @media only screen and (max-width: 1024px) {
+  #team .member .pic {
+    padding-bottom: 0px; 
+    height: 260px;
+    max-width: 300px;
+  }
+  #team .member .pic img {
+    padding-bottom: 10px; 
+  }
+  .exec .member .pic img {
+    height: 100%;
+    width: 80%;
+  }
+  .creative .member .pic img {
+    height: 100%;
+    width: 80%;
+  }
+  .rnd .member .pic img {
+    height: 100%;
+    width: 80%;
+  }
+  .mentor .member .pic img {
+    height: 100%;
+    width: 80%;
+  }
+  .management .member .r1 img {
+    height: 100%;
+    width: 80%;
+  }
+  .management .member .r2 img {
+    padding-top: 20px;
+    height: 100%;
+    width: 80%;
+  }
+}
+@media only screen and (max-width: 900px) {
+  #team .member .pic {
+    height: 260px;
+    max-width: 300px;
+  }
+  #team .member .pic img {
+    height: 260px;
+    max-width: 250px;
+  }
+  .exec .member .pic img {
+    height: 100%;
+    width: 80%;
+  }
+  .creative .member .pic img {
+    height: 100%;
+    width: 80%;
+  }
+  .rnd .member .pic img {
+    height: 100%;
+    width: 80%;
+  }
+  .mentor .member .pic img {
+    height: 100%;
+    width: 80%;
+  }
+  .management .member .r1 img {
+    height: 100%;
+    width: 80%;
+  }
+  .management .member .r2 img {
+    height: 100%;
+    width: 80%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  #team .member .pic {
+    padding-bottom: 20px;
+    height: 260px;
+    max-width: 300px;
+  }
+  #team .member .pic img {
+    height: 255px;
+    max-width: 250px;
+  }
+  #team .member h4 {
+    padding-top: 10px;
+  }
+  .exec .member .pic img {
+    height: 100%;
+    width: 80%;
+  }
+  .creative .member .pic img {
+    height: 100%;
+    width: 80%;
+  }
+  .rnd .member .pic img {
+    height: 100%;
+    width: 80%;
+  }
+  .mentor .member .pic img {
+    height: 100%;
+    width: 80%;
+  }
+  .management .member .r1 img {
+    height: 100%;
+    width: 80%;
+  }
+  .management .member .r2 img {
+    height: 100%;
+    width: 80%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  #team .member .pic {
+    height: 255px;
+  } 
+  #team .member .pic img {
+    height: 255px;
+    max-width: 245px;
+  }
+  #team .member h4 {
+    padding-top: 0px;
+    font-size: 18px;
+  }
+  #team .member .social i {
+    font-size: 16px;
+  }
+  #team .member span {
+    font-size: 16px;
+  }
+  .exec .member .pic img {
+    height: 100%;
+    width: 80%;
+  }
+  .creative .member .pic img {
+    height: 100%;
+    width: 80%;
+  }
+  .rnd .member .pic img {
+    height: 100%;
+    width: 80%;
+  }
+  .mentor .member .pic img {
+    height: 100%;
+    width: 80%;
+  }
+  .management .member .r1 img {
+    height: 100%;
+    width: 80%;
+  }
+  .management .member .r2 img {
+    height: 100%;
+    width: 80%;
+  }
+}
+@media only screen and (max-width: 500px) {
+  #team #section-title {
+    font-size: 30px;
+  }
+  #team .member .pic {
+    height: 250px;
+  }
+  #team .member .pic img {
+    height: 250px;
+  }
+  #team .member h4 {
+    padding-top: 0px;
+    font-size: 18px;
+  }
+  #team .member .social i {
+    font-size: 16px;
+  }
+  #team .member span {
+    font-size: 16px;
+  }
+  .exec .member .pic img {
+    height: 100%;
+    width: 80%;
+  }
+  .creative .member .pic img {
+    height: 100%;
+    width: 80%;
+  }
+  .rnd .member .pic img {
+    height: 100%;
+    width: 80%;
+  }
+  .mentor .member .pic img {
+    height: 100%;
+    width: 80%;
+  }
+  .management .member .pic img {
+    height: 100%;
+    width: 80%;
+  }
+}
+@media only screen and (max-width: 400px) {
+  #team #section-title {
+    font-size: 27px;
+  }
+  #team .member .pic {
+    height: 240px;
+  }
+  #team .member .pic img {
+    height: 240px;
+  }
+  #team .member h4 {
+    padding-top: 0px;
+    font-size: 18px;
+  }
+  #team .member .social i {
+    font-size: 16px;
+  }
+  #team .member span {
+    font-size: 16px;
+  }
+  .exec .member .pic img {
+    height: 100%;
+    width: 80%;
+  }
+  .creative .member .pic img {
+    height: 100%;
+    width: 80%;
+  }
+  .rnd .member .pic img {
+    height: 100%;
+    width: 80%;
+  }
+  .mentor .member .pic img {
+    height: 100%;
+    width: 80%;
+  }
+  .management .member .pic img {
+    height: 100%;
+    width: 80%;
+  }
+}

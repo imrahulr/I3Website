@@ -1,0 +1,260 @@
+/* ===================================================================
+ *  IEEE VJTI blog - (_layout.scss)
+ *
+ * ------------------------------------------------------------------- */
+#blog {
+  position: relative;
+  padding-top: 20px;
+  margin-top: 40px;
+  background-color: rgba(255, 255, 255, 0);
+  text-align: center;
+}
+#blog span {
+  color: #07617d;
+  font-weight: bold;
+}
+#blog .intro-head {
+}
+.section-title-divider1 {
+  width: 60px;
+  height: 3px;
+  background: orange;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+#blog h3 {
+  font-family: "montserrat-bold", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.667;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  letter-spacing: .3rem;
+  position: relative;
+}
+#blog .lead {
+  font-family: Arial, "librebaskerville-bold", serif;
+  font-size: 2.15rem;
+  line-height: 1.8;
+  color: #2e383f;
+  background-color: #ffffff;
+  margin-top: 6rem;
+}
+
+/* ===================================================================
+ *  2. content - (_layout.scss)
+ *
+ * ------------------------------------------------------------------- */
+
+#content {
+  background-color: rgba(255, 255, 255, 0);
+  text-align: center;
+  padding: 30px;
+}
+
+#content .blogContent {
+  background-color: #ffffff;
+  margin: auto;
+  text-align: justify;
+  margin-bottom: 80px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  border-radius: 5px;
+}
+#content h4 {
+  text-align: left;
+  font-family: "montserrat-bold", sans-serif;
+  font-size: 40px;
+  padding-top: 20px;
+  font-weight: 700;
+  padding-left: 5px;
+  background-color: #ffffff;
+  line-height: 1.667;
+  color: orange;
+  letter-spacing: .3rem;
+  position: relative;
+}
+#content .details {
+  font-family: "montserrat-regular", "librebaskerville-bold", serif;
+  font-size: 14px;
+  padding-left: 5px;
+  color: #808080;
+}
+#content .para {
+  font-family: "montserrat-regular", serif;
+  font-size: 18px;  
+  padding: 5px;
+  text-decoration: none;
+  tab-size: 16;
+  -moz-tab-size: 16;
+}
+#content .para-end {
+  font-family: "montserrat-regular", serif;
+  font-size: 20px;  
+  padding: 5px;
+  font-weight: 700;
+  text-decoration: none;
+  tab-size: 16;
+  -moz-tab-size: 16;
+}
+#content h5 {
+  text-align: left;
+  font-family: "montserrat-regular", sans-serif;
+  font-size: 12px;
+  padding-left: 5px;
+  padding-bottom: 15px;
+  text-decoration: none;
+  text-transform: none;
+  color: rgba(255, 255, 255, 0.5);
+}
+#content a, #content a:visited {
+  color: rgba(255, 255, 255, 0.5);
+}
+#content a:hover, #content a:focus, #content a:active {
+  color: white;
+}
+
+/* ------------------------------------------------------------------- 
+ * responsive:
+ * about 
+ * ------------------------------------------------------------------- */
+@media only screen and (max-width: 1024px) {
+  #blog {
+  }
+  #blog .about-wrap {
+    max-width: 800px;
+  }
+  #blog .lead {
+    font-size: 2rem;
+  }
+}
+@media only screen and (max-width: 900px) {
+  #blog .about-wrap {
+    max-width: 720px;
+  }
+  #blog .lead {
+    font-size: 1.9rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  /*#blog h3 {
+    font-size: 1.7rem;
+  }*/
+  #blog .about-wrap {
+    max-width: 600px;
+  }
+  #blog .lead {
+    font-size: 1.8rem;
+  }
+}
+@media only screen and (max-width: 600px) {
+  #blog {
+    min-height: auto;
+  }
+  #blog .about-wrap {
+    max-width: 500px;
+  }
+  #blog .lead {
+    margin-top: 4.8rem;
+    font-size: 1.7rem;
+  }
+}
+@media only screen and (max-width: 500px) {
+  /*#blog h3 {
+    font-size: 1.5rem;
+  }*/
+  #blog .lead {
+    font-size: 1.6rem;
+  }
+}
+@media only screen and (max-width: 400px) {
+  #blog {
+    padding: 4.2rem 0 9.6rem;
+  }
+  #blog .about-wrap {
+    max-width: 380px;
+  }
+  #blog .lead {
+    font-size: 1.6rem;
+  }
+}
+
+/* ------------------------------------------------------------------- 
+ * responsive:
+ * content 
+ * ------------------------------------------------------------------- */
+@media only screen and (max-width: 1024px) {
+  #content {
+    min-height: 636px;
+  }
+  #content .lead {
+    font-size: 1.9rem;
+  }
+  #content .para {
+    font-size: 18px;
+  }
+}
+@media only screen and (max-width: 900px) {
+  #content .lead {
+    font-size: 1.8rem;
+  }
+  #content .para {
+    font-size: 18px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  #content .lead {
+    font-size: 1.7rem;
+  }
+  #content .para {
+    font-size: 18px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  #content {
+    min-height: auto;
+    padding: 20px;
+  }
+  .section-title-divider1 {
+    margin-bottom: 7px;
+  }
+  #content .lead {
+    margin-top: 4.8rem;
+    font-size: 1.6rem;
+  }
+  #content .para {
+    font-size: 17px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .section-title-divider1 {
+    margin-bottom: 2px;
+  }
+  #content .lead {
+    font-size: 1.6rem;
+  }
+  #content {
+    padding: 15px;
+  }
+  #content .para {
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  #content {
+    padding: 8px;
+    border-radius: 5px;
+  }
+  .section-title-divider1 {
+    margin-bottom: 2px;
+  }
+  #content .about-wrap {
+    max-width: 380px;
+  }
+  #content .lead {
+    font-size: 1.5rem;
+  }
+  #content .para {
+    font-size: 16px;
+  }
+}

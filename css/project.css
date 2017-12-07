@@ -1,0 +1,197 @@
+/* ===================================================================
+ *  IEEE VJTI Projects - (_layout.scss)
+ *
+ * ------------------------------------------------------------------- */
+#proj-title {
+  min-height: 696px;
+  background-color: #ffffff;
+}
+#proj-title span {
+  color: #07617d;
+  font-weight: bold;
+}
+.section-title-divider1 {
+  width: 60px;
+  height: 3px;
+  background: orange;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+}
+
+#proj-title h3 {
+  text-align: center;
+  padding-top: 40px;
+  font-family: "montserrat-bold", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.667;
+  color: #07617d;
+  text-transform: uppercase;
+  letter-spacing: .3rem;
+  position: relative;
+}
+
+#proj-title .proj-idea {
+  font-family: "librebaskerville-bold", serif;
+  padding-top: 25px;
+  font-size: 18px;
+}
+
+#proj-title .proj-contact {
+  font-family: "librebaskerville-bold", serif;
+  text-align: center;
+  font-size: 19px;
+  height: 50px;
+  margin-top: 10px;
+  background-color: #4CAF50;
+  color: #ffffff;
+  position: relative;
+  display: inline-block;
+  border-radius: 5px;
+  text-transform: none;
+  /*color: #4CAF50;*/
+}
+#proj-title .proj-contact:hover, #proj-title .proj-contact:focus {
+  /*color: #008000;*/
+  background-color: #008000;
+}
+
+/* ------------------------------------------------------------------- 
+ * responsive:
+ * about 
+ * ------------------------------------------------------------------- */
+@media only screen and (max-width: 1024px) {
+  #proj-title .about-wrap {
+    max-width: 800px;
+  }
+}
+@media only screen and (max-width: 900px) {
+  #proj-title .about-wrap {
+    max-width: 720px;
+  }
+  
+}
+@media only screen and (max-width: 768px) {
+   #proj-title .about-wrap {
+    max-width: 600px;
+  }
+ }
+@media only screen and (max-width: 600px) {
+  #proj-title {
+    min-height: auto;
+  }
+  #proj-title h3 {
+    font-size: 38px;
+  }
+  #proj-title .about-wrap {
+    max-width: 500px;
+  }
+  #proj-title .proj-contact {
+    max-width: 550px;
+    font-size: 18px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  #proj-title h3 {
+    font-size: 30px;
+  }
+  #proj-title .proj-idea {
+    font-size: 19px;
+  }
+  #proj-title .proj-contact {
+    max-width: 400px;
+    font-size: 17px;
+    margin: auto;
+  }
+}
+@media only screen and (max-width: 400px) {
+  #proj-title {
+    padding: 4.2rem 0 9.6rem;
+  }
+  #proj-title h3 {
+    font-size: 32px;
+  }
+  #proj-title .proj-idea {
+    font-size: 16px;
+  }
+  #proj-title .about-wrap {
+    max-width: 400px;
+  }
+  #proj-title .proj-contact {
+    font-size: 14px;
+    max-width: 300px;
+    margin: auto;
+  }
+}
+
+/* ===================================================================
+ *  2. projects - (_layout.scss)
+ *
+ * ------------------------------------------------------------------- */
+#proj-content {
+  position: relative;
+  padding: 3rem 0 8rem;
+  text-align: justify;
+} 
+#proj-content .proj {
+  box-shadow: 4px 4px 8px 4px rgba(0,0,0,0.2);
+  padding: 20px;
+  margin-bottom: 30px;
+}
+#proj-content #proj-head {
+  text-align: left;
+  padding: 20px;
+  padding-left: 10px;
+  font-family: "montserrat-bold", sans-serif;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 1.667;
+  text-transform: uppercase;
+  letter-spacing: .3rem;
+  position: relative;
+}
+#proj-content .description {
+  font-family: "montserrat-regular", "librebaskerville-bold", serif;
+  font-size: 18px;
+  padding: 10px;
+}
+#proj-content .memb {
+  text-align: left;
+  padding: 15px;
+  padding-left: 10px;
+  font-family: "montserrat-bold", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+}
+#proj-content .memb-list {
+  font-family: "montserrat-regular", "librebaskerville-bold", serif;
+  font-size: 18px;
+  padding: 10px;
+}
+
+/* ------------------------------------------------------------------- 
+ * responsive:
+ * about 
+ * ------------------------------------------------------------------- */
+@media only screen and (max-width: 1024px) {
+}
+@media only screen and (max-width: 900px) {
+}
+@media only screen and (max-width: 768px) {
+}
+@media only screen and (max-width: 600px) {
+  #proj-content .description {
+    font-size: 17px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  #proj-content .description {
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  #proj-content .description {
+    font-size: 16px;
+  }
+}
