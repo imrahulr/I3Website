@@ -1,4 +1,4 @@
 # IEEE VJTI Website
 
 <hr>
-<a href="http://ieeevjti.com/">Link</a>
+<a href="http://ieeevjti.com/">Link to website</a>
